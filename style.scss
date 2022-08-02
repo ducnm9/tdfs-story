@@ -46,6 +46,7 @@ h3 {
 nav {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom: 1px solid;
     .nav-icon {
         color: $black;
         .nav-icon-item {
@@ -178,6 +179,56 @@ nav {
             color: $black;
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+.about-us {
+    background: $light-brown;
+    .container {
+        border-bottom: 1px solid;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .about-text {
+        font-size: 25px;
+        line-height: 2.5rem;
+        strong {
+            font-size: 25px;
+        }
+        i {
+            font-size: 25px;
+        }
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.founder-tdfs {
+    background: $light-brown;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    h3 {
+        font-weight: 900;
+        font-size: 23px;
+    }
+    .founder-info {
+        .founder-avatar{
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
             }
         }
     }

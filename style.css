@@ -36,6 +36,7 @@ h3 {
 nav {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-bottom: 1px solid;
 }
 nav .nav-icon {
   color: #0B0A06;
@@ -156,6 +157,51 @@ nav .navbar-nav .nav-item .nav-link {
 }
 .main-footer .footer-link-list a:hover {
   text-decoration: underline;
+}
+
+.about-us {
+  background: #F4E5D9;
+}
+.about-us .container {
+  border-bottom: 1px solid;
+}
+.about-us h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+.about-us .about-text {
+  font-size: 25px;
+  line-height: 2.5rem;
+}
+.about-us .about-text strong {
+  font-size: 25px;
+}
+.about-us .about-text i {
+  font-size: 25px;
+}
+.about-us p {
+  font-size: 16px;
+}
+
+.founder-tdfs {
+  background: #F4E5D9;
+}
+.founder-tdfs h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+.founder-tdfs h3 {
+  font-weight: 900;
+  font-size: 23px;
+}
+.founder-tdfs .founder-info .founder-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {
