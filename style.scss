@@ -1,4 +1,4 @@
-$light-brown: #F4E5D9;
+$light-brown: #F4E5D9; //F4E5D9
 $black: #0B0A06;
 $red: #F23837;
 $light-blue: #17A7F0;
@@ -54,6 +54,18 @@ h3 {
     }
 }
 
+.create-by {
+    font-size:13px;
+    color: $light-black;
+    a {
+        color: $light-black;
+    }
+    .fa-circle {
+        font-size: 5px; 
+        margin: auto 5px 3px 5px;
+    }
+}
+
 nav {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -61,7 +73,7 @@ nav {
     .nav-icon {
         color: $black;
         .nav-icon-item {
-            font-size: 20px;
+            font-size: 30px;
             path {
                 color: $black;
             }
@@ -265,12 +277,6 @@ nav {
                 font-weight: 300;
             }
         }
-        .create-by {
-            color: $light-black;
-            a {
-                color: $light-black;
-            }
-        }
         .see-all {
             text-transform: uppercase;
             font-size: 13px;
@@ -289,17 +295,6 @@ nav {
         letter-spacing: 1px;
     }
     .box-article {
-        .create-by {
-            font-size:13px;
-            color: $light-black;
-            a {
-                color: $light-black;
-            }
-            .fa-circle {
-                font-size: 5px; 
-                margin: auto 5px 3px 5px;
-            }
-        }
         h4 {
             font-weight: 600;
             span {
@@ -323,6 +318,28 @@ nav {
         font-weight: 600;
         margin-top: 15px;
         letter-spacing: 1px;
+    }
+}
+
+.details-page {
+    background: $light-brown;
+    .detail-title {
+        font-weight: 600;
+    }
+    .detail-pic {
+        max-height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        font-size: 16px;
+    }
+    .detail-content {
+        font-size: 16px;
+        line-height: 2.3rem;
     }
 }
 
