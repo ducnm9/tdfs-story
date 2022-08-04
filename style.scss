@@ -9,6 +9,7 @@ $light-black: #ABA199;
 
 /* Using SCSS variables to store breakpoints */
 $breakpoint-tablet: 768px;
+$breakpoint-mobile: 450px;
 
 * {
     font-family: 'Noto Sans', sans-serif;
@@ -75,6 +76,9 @@ nav {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 1px solid;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
     .nav-icon {
         color: $black;
         .nav-icon-item {
@@ -92,6 +96,38 @@ nav {
         }
     }
 }
+
+.side-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 23px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		&:hover {
+			color: #f1f1f1;
+		}
+	}
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
+
 
 .main-banner {
     .carousel {
@@ -353,6 +389,15 @@ nav {
         max-width: 80% !important;
         margin: auto;
     }
+}
+
+@media screen and (max-height: $breakpoint-mobile) {
+	.sidenav {
+		padding-top: 15px;
+		a {
+			font-size: 18px;
+		}
+	}
 }
 
 
