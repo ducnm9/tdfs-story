@@ -1,7 +1,7 @@
 const sideNav = document.querySelector('.side-nav')
 const openNav = ()=>{
-    sideNav.style.width = "250px"
+    sideNav.classList.remove('d-none')
 }
 const closeNav = ()=> {
-    sideNav.style.width = "0px"
+    sideNav.classList.add('d-none')
 }
